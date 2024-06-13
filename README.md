@@ -1,3 +1,3 @@
 # 🖋StudyRecord
-### Infra
+## Infra
 
