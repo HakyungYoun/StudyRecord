@@ -11,4 +11,4 @@ ex) [1,2,3].map(function(){}) function 괄호의 첫번째 값은 array 안에 �
 function(num, index) num = 1,2,3 나올 것이고 index는 0,1,2 나올 것이다
 
 반복문으로 생성한 html 같은 경우 속성값으로 key 값이 들어가야한다
-ex) "<div className='test' key={index}></div>"
+ex) ```div className='test' key={index}</div>```
