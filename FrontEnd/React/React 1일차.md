@@ -14,7 +14,6 @@ function(num, index) num = 1,2,3 나올 것이고 index는 0,1,2 나올 것이�
 ex) ```<div className='test' key={index}></div>```
 
 부모 component에 있는 state를 자식 component에서 쓰고 싶으면 props 문법을 사용해야한다
-
 ex) ```<Modal titles={titles}>``` 자식 component 호출하는 곳에서 작명한 props 값과 전송할 state 값을 기입한다
     이후 props 를 해당 component의 파라미터로 등록후에 {props.작명한props} 형태로 state를 가져다 쓸 수 있다
 ```<Modal titles={titles} titleIndex={titleIndex}/>``` 이런식으로 state를 여러개 넘겨줄 수도 있다
