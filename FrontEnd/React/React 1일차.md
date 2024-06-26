@@ -17,5 +17,8 @@ ex) ```<div className='test' key={index}></div>```
 ex) ```<Modal titles={titles}>``` 자식 component 호출하는 곳에서 작명한 props 값과 전송할 state 값을 기입한다  
 &emsp;&emsp;이후 props 를 해당 component의 파라미터로 등록후에 {props.작명한props} 형태로 state를 가져다 쓸 수 있다  
 
-```<Modal titles={titles} titleIndex={titleIndex}/>``` 이런식으로 state를 여러개 넘겨줄 수도 있다
+```<Modal titles={titles} titleIndex={titleIndex}/>``` 이런식으로 state를 여러개 넘겨줄 수도 있다  
+
+props로 state말고 일반 글자도 넘겨줄 수 있다  
+ex) ```<Modal titles="제목"/>```
 ***
