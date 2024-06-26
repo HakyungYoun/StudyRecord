@@ -1,4 +1,3 @@
-# 💻FrontEnd 공부
 ## 리액트 1일차(map을 통한 반복문, props)
 
 map을 사용하면 array 안에 있는 개수만큼 반복시켜줌
