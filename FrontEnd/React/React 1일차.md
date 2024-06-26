@@ -19,6 +19,6 @@ ex) ```<Modal titles={titles}>``` 자식 component 호출하는 곳에서 작명
 
 ```<Modal titles={titles} titleIndex={titleIndex}/>``` 이런식으로 state를 여러개 넘겨줄 수도 있다  
 
-props로 state말고 일반 글자도 넘겨줄 수 있다  
-ex) ```<Modal titles="제목"/>```
+props로 state말고 일반 글자,함수 등등 다른 것도 넘겨줄 수 있다  
+ex) ```<Modal titles="제목"/>``` ```<Modal titles={function}/>```
 ***
