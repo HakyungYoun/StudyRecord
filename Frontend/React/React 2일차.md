@@ -21,7 +21,9 @@ onClick={addTitle()} 처음에는 이런식으로 코드를 만들었으나 자�
   }
   render(){
     return(
-      <div>안녕 {this.state.name}</div>
+      <div>{this.state.name}</div>
     )
   }
-}```
+}
+```
+이런식으로 생성 가능 생성을 위해 constructor(){ super(); } render(){} 3가지 정의 필요
