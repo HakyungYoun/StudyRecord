@@ -21,9 +21,16 @@ onClick={addTitle()} 처음에는 이런식으로 코드를 만들었으나 자�
   }
   render(){
     return(
-      <div>{this.state.name}</div>
+      <div>{this.state.name}
+        <button onClick={()=>this.setState({age:21})}>버튼</button>
+      </div>
     )
   }
 }
 ```
-이런식으로 생성 가능 생성을 위해 constructor(){ super(); } render(){} 3가지 정의 필요
+이런식으로 생성 가능 생성을 위해 constructor(){ super(); } render(){} 3가지 정의 필요  
+
+state set 방식 차이 있음  
+
+props 는 constructor() super() 안에 props 선언가능 this.props 써야 사용가능
+
