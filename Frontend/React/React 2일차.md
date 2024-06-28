@@ -12,8 +12,8 @@ onClick={addTitle()} 처음에는 이런식으로 코드를 만들었으나 자�
 ***  
 옛날 컴포넌트 생성 방식  
 ```class Modal2 extends React.Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state={
       name:'kim',
       age:20
