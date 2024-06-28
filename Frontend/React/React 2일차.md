@@ -9,4 +9,19 @@ onClick={addTitle()} 처음에는 이런식으로 코드를 만들었으나 자�
 실제로 무한반복되는 에러가 나왔음  
 
 해당 문제 onClick={()=>{addTitle()}} 해당 코드처럼 콜백함수로 사용하던가 onClick={addTitle} 이런식으로 괄호 없이 사용할 수 있으면 작성할 수 있다
-***
+***  
+옛날 컴포넌트 생성 방식  
+class Modal2 extends React.Component{
+  constructor(){
+    super();
+    this.state={
+      name:'kim',
+      age:20
+    }
+  }
+  render(){
+    return(
+      <div>안녕 {this.state.name}</div>
+    )
+  }
+}
