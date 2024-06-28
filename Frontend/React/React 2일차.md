@@ -7,6 +7,7 @@ ex) onMouseOver={} , onScroll={}
 
 onClick={addTitle()} 처음에는 이런식으로 코드를 만들었으나 자바스크립트는 함수() 로 작성 시 렌더링 시 실행되면서 에러발생 위험이 있음
 실제로 무한반복되는 에러가 나왔음  
+
 해당 문제 onClick={()=>{addTitle()}} 해당 코드처럼 콜백함수로 사용하던가 onClick={addTitle} 이런식으로 괄호 없이 사용할 수 있으면 작성할 수 있다
 
 
