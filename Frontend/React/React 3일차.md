@@ -24,4 +24,6 @@ function MainItems(props){
 export default MainItems
 ```
 import 시 import 할 곳에서 선언할 이름과 위치로 import 가능  
-ex) import MainItems from './test.js';
+ex) import MainItems from './test.js';  
+
+추가로 props 넘겨줄 때 <MainItems data={item[index]}></MainItems> 이런식으로도 가능하다
