@@ -23,3 +23,5 @@ function MainItems(props){
 
 export default MainItems
 ```
+import 시 import 할 곳에서 선언할 이름과 위치로 import 가능  
+ex) import MainItems from './test.js';
