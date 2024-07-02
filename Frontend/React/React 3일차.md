@@ -14,7 +14,7 @@ ex) test.js 파일의 컴포넌트
 function MainItems(props){
   return(
   <div className='col-md-4'>
-            <img className='profile' src={process.env.PUBLIC_URL+props.data[props.index].url} alt='하니 이미지' width="40%"></img>
+            <img className='profile' src={process.env.PUBLIC_URL+props.data[props.index].url} alt='이미지' width="40%"></img>
             <h4>{props.data[props.index].title}</h4>
             <p>{props.data[props.index].content}</p>
           </div>
