@@ -17,4 +17,25 @@ index.js 파일에 ```<BrowserRouter></BrowserRouter> 해당 태그 사이에 <A
 Routes, Route 이용해서 path 설정과 띄울 컴포넌트 설정 가능  
 
 useNavigate import 후  ```let navigate = useNavigate();``` 해당 예시처럼 선언 후 사용 가능  
-ex) ```<Nav.Link onClick={()=>{navigate('/detail')}}>Detail</Nav.Link>```
+ex) ```<Nav.Link onClick={()=>{navigate('/detail')}}>Detail</Nav.Link>```  
+
+nested router 기능을 이용해서  
+```
+<Route path='/about' element={<About/>}>
+          <Route path='member' element={<div>멤버</div>}/>
+          <Route path='location' element={<div>로케이션</div>}/>
+</Route>
+```
+이런식으로 Route 안에 Route들을 넣을 수 있음  
+장점 : ex) /about/member로 갔을 때 about 과 멤버 정보를 둘 다 띄울 수 있음  
+단 Outlet을 이용해서 어떤곳에 memeber 요소를 넣어줄 지 정해야 한다  
+```
+function About(){
+  return(
+    <div>
+      <h4>회사정보</h4>
+      <Outlet></Outlet>
+    </div>
+  )
+}
+```
