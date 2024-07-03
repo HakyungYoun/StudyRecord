@@ -14,4 +14,7 @@ index.js 파일에 ```<BrowserRouter></BrowserRouter> 해당 태그 사이에 <A
         <Route path='/detail' element={<Detail/>}/>
       </Routes>
 ```
-Routes, Route 이용해서 path 설정과 띄울 컴포넌트 설정 가능
+Routes, Route 이용해서 path 설정과 띄울 컴포넌트 설정 가능  
+
+useNavigate import 후  ```let navigate = useNavigate();``` 해당 예시처럼 선언 후 사용 가능  
+ex) ```<Nav.Link onClick={()=>{navigate('/detail')}}>Detail</Nav.Link>```
