@@ -39,3 +39,4 @@ function About(){
   )
 }
 ```
+nested route는 유사한 여러 페이지를 구성할 때 쓰이면 좋다
