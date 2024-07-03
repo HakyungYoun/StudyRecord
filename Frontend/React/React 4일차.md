@@ -6,4 +6,12 @@
 리액트 라우터 사용을 위해 설치 필요  
 npm install react-router-dom@6 - dom 6버전 설치  
 
-index.js 파일에 ```<BrowserRouter></BrowserRouter> 해당 태그 사이에 <App/> ```태그를 넣는다
+index.js 파일에 ```<BrowserRouter></BrowserRouter> 해당 태그 사이에 <App/> ```태그를 넣는다  
+
+```
+<Routes>
+        <Route path='/' element={<Main/>}/>
+        <Route path='/detail' element={<Detail/>}/>
+      </Routes>
+```
+Routes, Route 이용해서 path 설정과 띄울 컴포넌트 설정 가능
