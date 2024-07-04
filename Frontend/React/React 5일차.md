@@ -16,4 +16,9 @@ filter -> 전체에 대해서 확인 후 반환
 ##  
 
 styled-components 사용을 위해 설치를 해준다  
-npm install styled-components
+npm install styled-components  
+
+styled-components의 장점 : 스타일이 다른 js 파일로 오염(전이)되지 않는다  
+코드를 하나로 합치기 때문에 다른 곳에 적용될 수 있다  
+
+다른 방법으로는 예시로 App.js에 종속되는 css파일은 App.module.css 작명하면 App.js에 종속된다
