@@ -27,4 +27,9 @@ css파일로 구성하지 않기 때문에 페이지에 선언한 css만 골라�
 styled-components는 모듈처럼 작동하기에 선언 시 대문자로 선언필요
 
 ```let YellowBtn = styled.button`background : ${ props => props.bg }; color : black; padding : 10px` ``` 해당 예시처럼 props 선언해서  
-```<YellowBtn bg='blue'/>``` 모듈처럼 props 값을 넣어줄 수 있음
+```<YellowBtn bg='blue'/>``` 모듈처럼 props 값을 넣어줄 수 있음  
+
+```let YellowBtn = styled.button`background : ${ props => props.bg }; color : ${props => props.bg =='blue'? 'white' : 'black'}; padding : 10px` ```  
+해당 방식처럼 사용도 가능  
+
+```let NewBtn = styled.button(YellowBtn);``` 기존 선언한 내용 복사가능
