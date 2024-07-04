@@ -6,4 +6,11 @@ ex) 파라미터 설정 ```<Route path='/detail/:id' element={<Detail data={data
 
 ```let {id}=useParams();``` 이 예시처럼 id 값으로 선언한 곳의 파라미터 값을 가져올 수 있다  
 
+id에 해당하는 데이터를 가져오기 위해 javascript find를 써서 해당하는 item의 id를 가져왔다
+find, filter 를 쓸 수 있지만 나는 Unique한 값인 id를 가져오기 때문에 효율이 더 좋은 find를 사용하였음  
+
+```let itemNum=props.data.find(item=>item.id=id).id;```  
+
+find -> 찾으면 그만두고 반환  
+filter -> 전체에 대해서 확인 후 반환
 
