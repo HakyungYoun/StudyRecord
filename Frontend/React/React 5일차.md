@@ -22,4 +22,9 @@ styled-components의 장점 : 스타일이 다른 js 파일로 오염(전이)되
 리액트는 코드를 하나로 합치기 때문에 다른 곳에 적용될 수 있다  
 css파일로 구성하지 않기 때문에 페이지에 선언한 css만 골라서 로드를 할 수 있기에 페이지 로딩시간이 조금이나마 빨라질 수 있다  
 
-다른 방법으로는 예시로 App.js에 종속되는 css파일은 App.module.css 작명하면 App.js에 종속된다
+다른 방법으로는 예시로 App.js에 종속되는 css파일은 App.module.css 작명하면 App.js에 종속된다  
+
+styled-components는 모듈처럼 작동하기에 선언 시 대문자로 선언필요
+
+```let YellowBtn = styled.button`background : ${ props => props.bg }; color : black; padding : 10px` ``` 해당 예시처럼 props 선언해서  
+```<YellowBtn bg='blue'/>``` 모듈처럼 props 값을 넣어줄 수 있음
