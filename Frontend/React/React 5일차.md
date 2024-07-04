@@ -32,4 +32,6 @@ styled-components는 모듈처럼 작동하기에 선언 시 대문자로 선언
 ```let YellowBtn = styled.button`background : ${ props => props.bg }; color : ${props => props.bg =='blue'? 'white' : 'black'}; padding : 10px` ```  
 해당 방식처럼 사용도 가능  
 
-```let NewBtn = styled.button(YellowBtn);``` 기존 선언한 내용 복사가능
+```let NewBtn = styled.button(YellowBtn);``` 기존 선언한 내용 복사가능  
+
+단점 : js파일 복잡해짐, 다른 파일에서 사용시 export하면 되는데 import하는 내용하는 방식이 그냥 css파일 쓰는 것과 차이가 없음, 협업사 css담당의 숙련도 이슈
