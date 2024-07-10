@@ -33,6 +33,12 @@ axios.post(url,{data})
 ```
 Promis.all([ axios.get(url1), axios.get(url2)])
         .then(()=>{
+        const response1 = responses[0];
+        const response2 = responses[1];
         })
 ```
-이런식으로 쓸 수 있다
+이런식으로 쓸 수 있다  
+
+axios는 json 데이터를 자동으로 array로 바꿔준다  
+
+fetch를 사용하면 json으로 온 data를 array로 바꿔주는 작업을 해야함
