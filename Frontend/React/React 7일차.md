@@ -15,4 +15,24 @@ axios.get('https://codingapple1.github.io/shop/data2.json')
         })
 ```
 요청 결과는 axios.get(url).then() 으로 확인한다  
-만약 요청 실패 시 .catch() 로 예외처리 가능
+만약 요청 실패 시 .catch() 로 예외처리 가능  
+
+post 요청은  
+```
+axios.post(url,{data})
+        .then((data)=>{ 
+          addMainItems(data.data);
+        }).catch(()=>{
+          console.log('fail');
+        })
+```
+이런식으로 요청 url + (보낼 데이터) 넣어서 보낸다  
+
+
+동시에 ajax 요청을 여러개 하려면  
+```
+Promis.all([ axios.get(url1), axios.get(url2)])
+        .then(()=>{
+        })
+```
+이런식으로 쓸 수 있다
