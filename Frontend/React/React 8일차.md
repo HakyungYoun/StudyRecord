@@ -13,7 +13,14 @@ ex)``` <Route path='/' element={<Context1.Provider><Main Product={Product} /></C
 ```<Context>```로 state 공유를 원하는 컴포넌트 감싸기  
 
 ```<Context1.Provider value={{stock,Product}}><Main NewJeans={Product} /></Context1.Provider>```  
-value에 state 넣는다. 이렇게 되면 감싼 컴포넌트의 자식들까지도 사용가능
+value에 state 넣는다. 이렇게 되면 감싼 컴포넌트의 자식들까지도 사용가능  
+
+사용법  
+export let Context1 = createContext(); export 후  
+
+사용할 곳에서 import {Context1} from './../App.js' import 한다
+
+
 
 
 
