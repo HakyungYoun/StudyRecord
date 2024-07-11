@@ -9,7 +9,12 @@ ContextAPI 사용법
 ex) ```let Context1 = createContext();```  
 해당 예시처럼 createContext() 선언  
 
-ex)``` <Route path='/' element={<Context1.Provider><Main NewJeans={NewJeans} /></Context1.Provider>} />```  
-<Context>로 원하는 컴포넌트 감싸기
+ex)``` <Route path='/' element={<Context1.Provider><Main Product={Product} /></Context1.Provider>} />```  
+```<Context>```로 state 공유를 원하는 컴포넌트 감싸기  
+
+```<Context1.Provider value={{stock,Product}}><Main NewJeans={Product} /></Context1.Provider>```  
+value에 state 넣는다. 이렇게 되면 감싼 컴포넌트의 자식들까지도 사용가능
+
+
 
 
