@@ -21,6 +21,7 @@ export let Context1 = createContext(); export 후
 사용할 곳에서 import {Context1} from './../App.js' import 한다  
 
 ```let a = useContext(Context1);```  
+```let {stock} = useContext(Context1);```  
 선언하여 사용
 
 
