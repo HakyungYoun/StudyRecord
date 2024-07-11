@@ -5,4 +5,11 @@
 
 실전에서는 ContextAPI보다 Redux를 많이 사용한다(성능 이슈, 컴포넌트 재활용이 어렵다는 이슈로 인해)  
 
+ContextAPI 사용법  
+ex) ```let Context1 = createContext();```  
+해당 예시처럼 createContext() 선언  
+
+ex)``` <Route path='/' element={<Context1.Provider><Main NewJeans={NewJeans} /></Context1.Provider>} />```  
+<Context>로 원하는 컴포넌트 감싸기
+
 
