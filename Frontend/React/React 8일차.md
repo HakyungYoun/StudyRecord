@@ -4,6 +4,7 @@
 이러한 문제를 해결하기 위해 Context API, Redux를 활용할 수 있다  
 
 실전에서는 ContextAPI보다 Redux를 많이 사용한다(성능 이슈, 컴포넌트 재활용이 어렵다는 이슈로 인해)  
+state 변경 시 쓸데없는 것까지 재렌더링, 나중에 state받은 컴포넌트에서 그걸 다시 쓸 경우 어려움
 
 ContextAPI 사용법  
 ex) ```let Context1 = createContext();```  
