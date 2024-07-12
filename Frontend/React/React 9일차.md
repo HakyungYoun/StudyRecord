@@ -5,5 +5,16 @@ Redux 사용 시 js파일에 state들을 보관 가능하고 컴포넌트들이 
 react, react-dom 두가지 항목의 버전이 18.1.0 이상 되어야 사용할 수 있다  
 
 Redux 설치 명령어
-```npm install @reduxjs/toolkit react-redux ```
+```npm install @reduxjs/toolkit react-redux ```  
+
+js 파일 생성 후 입력
+```
+import { configureStore } from '@reduxjs/toolkit'
+
+export default configureStore({
+  reducer: { }
+})
+```
+
+index.js 파일에 <Provider> import 해서 설정하기
 
