@@ -22,3 +22,4 @@ export let {changeName} = user.actions
 let dispatch = useDispatch();
 dispatch(changeName())
 ```
+dispatch는 안에 있는 reducer 함수를 호출
