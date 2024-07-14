@@ -34,3 +34,24 @@ let user = createSlice({
   }
 ```
 2. state 선언명과 위에서 만든 state변수.reducer로 보관
+
+```
+let state = useSelector((state)=>{
+        return state;
+    });
+```
+Reduc store에 보관한 state를 사용하고 싶은 곳에서 해당 예시처럼 사용 가능  
+위의 예시는 보관된 state 전부를 가져오는 예시  
+
+원하는 state만 가져오려면  
+```
+let state = useSelector((state)=>{
+        return state.user;
+    });
+```
+state 리턴값을 지정  
+
+또한 return과 중괄호는 같이 생략가능  
+```
+let state = useSelector((state)=> state);
+```
