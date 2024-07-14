@@ -16,5 +16,21 @@ export default configureStore({
 })
 ```
 
-index.js 파일에 <Provider> import 해서 설정하기
+index.js 파일에 <Provider> import 해서 설정하기  
 
+Redux store에 state 보관하는 법(예시)  
+```
+let user = createSlice({
+  name : 'user',
+  initialState : 'kim'
+})
+```
+1. state 이름과 초기 state 값 선언
+
+```
+   reducer: { 
+    user : user.reducer,
+    stock : stock.reducer
+  }
+```
+2. state 선언명과 위에서 만든 state변수.reducer로 보관
