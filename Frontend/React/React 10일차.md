@@ -10,5 +10,3 @@ state 선언한 곳에
       return 'john kim';
     }
    }
-  ```
-  
