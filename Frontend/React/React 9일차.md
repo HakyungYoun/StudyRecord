@@ -1,4 +1,4 @@
-## 리액트 9일차(CRedux)  
+## 리액트 9일차(Redux)  
 
 Redux 사용 시 js파일에 state들을 보관 가능하고 컴포넌트들이 state를 빼서 사용가능하다  
 
