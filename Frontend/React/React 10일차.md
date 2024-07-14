@@ -22,4 +22,16 @@ export let {changeName} = user.actions
 let dispatch = useDispatch();
 dispatch(changeName())
 ```
-dispatch는 안에 있는 reducer 함수를 호출
+dispatch는 안에 있는 reducer 함수를 호출  
+
+state가 object/array일 경우 변경하는 법  
+```
+reducers: {
+    plusCount(state,index) {
+      state[index.payload].count +=1;
+    }
+  }
+```
+이런식으로 직접 수정해도 state 변경된다(immer.js가 자동으로 다운되는데 그것의 도움)  
+return 없이 직접 수정. 일부러 수정하기 쉽게 그냥 문자로 state값을 안 넣고 object/array 형태로 넣는 경우도 있다  
+
