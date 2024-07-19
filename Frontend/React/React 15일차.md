@@ -33,4 +33,9 @@ let [isPending, startTransition] = useTransition();  -> [변수,함수]
 
 ---  
 
+useDeferredValue 해당 기능도 느린 컴포넌트 성능 향상 가능하게 해준다  
 
+```let state = useDeferredValue(state); ```
+집어넣은 state는 늦게 처리해준다  
+
+때에 맞게 잘 사용해야될 것으로 생각된다  
