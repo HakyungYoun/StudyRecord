@@ -8,4 +8,29 @@
 
 useTransition 기능으로 느린 컴포넌트 성능 향상이 가능하다  
 
-사용예시
+사용 예시  
+```
+let a = new Array(10000).fill(0)
+let [isPending, startTransition] = useTransition();  -> [변수,함수]
+
+<input onChange={ (e)=>{ 
+        startTransition(()=>{
+          setName(e.target.value) 
+        })
+      }}/>
+
+      {
+        a.map(()=>{
+          return <div>{name}</div>
+        })
+      }
+```
+예시 처럼 state 변경 함수를 감싸면 해당 코드를 다르 코드들보다 나중에 처리한다
+
+변수로 선언한 것은 오르쪽 함수가 처리중일 때 true로 변하는 변수다
+
+근본적인 성능 개선이라기보다 특정 코드의 실행시점을 뒤로 옮겨주는 것일 뿐이다  
+
+---  
+
+
